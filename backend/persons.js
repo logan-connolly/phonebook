@@ -1,7 +1,7 @@
 const data = require("./data");
 let persons = data.persons;
 
-exports.get_all = (request, response) => {
+exports.getAll = (request, response) => {
   response.json(persons);
 };
 

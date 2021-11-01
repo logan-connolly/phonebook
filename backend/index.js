@@ -15,7 +15,7 @@ app.use(express.static(path.resolve(__dirname, "../frontend/build")));
 app.use(morgan(middleware.payloadLogger));
 
 // Persons resource
-app.get("/api/persons", persons.get_all);
+app.get("/api/persons", persons.getAll);
 app.get("/api/persons/:id", persons.get);
 app.delete("/api/persons/:id", persons.remove);
 app.post("/api/persons", persons.add);
